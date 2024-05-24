@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/style.css">
   <!-- swipe CDN -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -114,3 +114,71 @@
       </article>
     </div>
   </section>
+
+  <section class="container testimonials__container mySwiper">
+    <h2>Happy Clients' Testimonials</h2>
+    <div class="swipe-wrapper">
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="/images/enock.jpg" alt="Enock Ochieng Josko">
+        </div>
+        <div class="testimonial__info">
+          <h3>Enock Ochieng Josko</h3>
+          <small>Client</small>
+        </div>
+        <div class="testimonial__body">
+          <p>Pheliz Investment is the best cyber and stationary shop I have ever worked with. They are very professional and their services are top notch</p>
+        </div>
+      </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="/images/elizabeth.jpg" alt="Elizabeth Oyugi">
+        </div>
+        <div class="testimonial__info">
+          <h3>Elizabeth Oyugi</h3>
+          <small>Client</small>
+        </div>
+        <div class="testimonial__body">
+          <p>Pheliz Investment is a lifesaver! Clear, fast internet, and friendly staff</p>
+        </div>
+      </article>
+
+      <article class="testimonial swiper-slide">
+        <div class="avatar">
+          <img src="/images/brendah.jpg" alt="Brendah Chepngeno">
+        </div>
+        <div class="testimonial__info">
+          <h3>Brendah Chepngeno</h3>
+          <small>Client</small>
+        </div>
+        <div class="testimonial__body">
+          <p>Pheliz Investment is the perfect place to catch up on work and browse the web</p>
+        </div>
+      </article>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+  <footer>
+    <p>&copy; Pheliz Investment 2024</p>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/JavaScript/main.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  </script>
+</body>
+</html>
