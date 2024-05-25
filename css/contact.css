@@ -1,4 +1,4 @@
-.contact__container{
+.contact__container {
     background: var(--color-bg1);
     padding: 4rem;
     display: grid;
@@ -8,73 +8,73 @@
     margin: 7rem auto;
     border-radius: 1rem;
 }
-.contact{
+.contact {
     margin-top: 2rem;
     padding-top: 8rem;
 }
-.contact__aside{
+.contact__aside {
     background: var(--color-primary);
     padding: 3rem;
     border-radius: 1rem;
     position: relative;
     bottom: 10rem;
 }
-.aside__image{
+.aside__image {
     width: 12rem;
     margin-bottom: 2rem;
 }
 
-.contact__aside h2{
+.contact__aside h2 {
     text-align: left;
     margin-bottom: 1rem;
 }
 
-.contact__aside p{
+.contact__aside p {
     font-size: 0.9rem;
     margin-bottom: 2rem;
 }
-.contact__details li{
+.contact__details li {
     display: flex;
     gap: 0.8rem;
     margin-top: 3rem;
 }
 
-.contact__socials a{
+.contact__socials a {
     background: var(--color-bg2);
     padding: 0.5rem;
     border-radius: 50%;
     font-size: 0.9rem;
 }
 
-.contact__socials a:hover{
+.contact__socials a:hover {
     background: transparent;
 }
 
-.contact__form{
+.contact__form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     margin-right: 1.2rem;
 }
 
-.form__name{
+.form__name {
     display: flex;
     gap: 1.2rem;
 }
 
-.contact__form input[type="text"]{
+.contact__form input[type="text"] {
     width: 50%;
 }
 
 input,
-textarea{
+textarea {
     width: 100%;
     padding: 1rem;
     background: var(--color-bg);
     color: var(--color-white);
 }
 
-.contact__form .btn{
+.contact__form .btn {
     width: 100%;
     cursor: pointer;
     margin-top: 1rem;
@@ -91,33 +91,33 @@ textarea{
         padding: 1.5rem;
     }
 
-    .contact__aside{
+    .contact__aside {
         width: auto;
         padding: 1.5rem;
         bottom: 0;
     }
-    .contact__form{
+    .contact__form {
         align-self: center;
         margin-right: 1.5rem;
     }
 }
 
-@media scree and (max-width: 600px) {
-    .contact__container{
+@media screen and (max-width: 600px) {
+    .contact__container {
         grid-template-columns: 1fr;
         gap: 3rem;
         margin-top: 0;
         padding: 0;
     }
-    .contact__form{
-        margin: 0 1 5rem 3rem;
+    .contact__form {
+        margin: 0 1rem 5rem 3rem;
     }
 
-    .contact__name{
+    .form__name {
         flex-direction: column;
     }
 
-    .form__name input[type="text"]{
+    .form__name input[type="text"] {
         width: 100%;
     }
 }
