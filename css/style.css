@@ -274,7 +274,7 @@ nav button {
     gap: 4rem;
 }
 
-nav__menu a {
+.nav__menu a {
     font-size: 0.9rem;
     transition: all 400ms ease;
 }
@@ -317,4 +317,35 @@ header {
     display: grid;
     grid-template-columns: reapeat(auto-fit, minmax(200px, 1fr));
     gap: 1.2rem;
+}
+
+.faqs {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faqs__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.faq__icon {
+    margin-right: 10px;
+    color: #333;
+}
+
+.question__answer h5 {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
 }
