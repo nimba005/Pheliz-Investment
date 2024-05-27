@@ -20,6 +20,15 @@ faqs.forEach(faq => {
   });
 });
 
+const learnMoreBtn = document.getElementById('learnMore');
+
+learnMoreBtn.addEventListener('click', () => {
+  const targetElement = document.querySelector('.Our Services');
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
 // Toggle navigation menu
 const menu = document.querySelector('.nav__menu');
 const menuBtn = document.querySelector('#open-menu-btn');
