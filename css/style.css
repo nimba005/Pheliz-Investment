@@ -156,7 +156,7 @@ nav button {
 }
 
 :root {
-    --color-primary: #052e05;
+    --color-primary: #04244e;
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
     --color-danger: #f75842;
@@ -166,7 +166,7 @@ nav button {
     --color-black: black;
     --color-bg: #1f2641;
     --color-bg1: #2e3267;
-    --color-bg2: #030703;
+    --color-bg2: #110202;
     --font-size-h1: 2.4rem;
     --font-size-h2: 2rem;
     --font-size-h3: 1.6rem;
@@ -370,7 +370,7 @@ header {
 .testimonial {
     flex: 1 1 calc(33.333% - 20px);
     box-sizing: border-box;
-    background: #000502;
+    background: #130503;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
