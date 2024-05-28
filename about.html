@@ -101,6 +101,28 @@
         </article>
       </div>
     </section>
-    <script src="JavaScript/main.js"></script>
-  </body>
+    
+  <footer>
+    <p>&copy; Pheliz Investment 2024</p>
+  </footer>
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="JavaScript/main.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  </script>
+
+</body>
 </html>
