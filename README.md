@@ -1,15 +1,15 @@
-# Foundation-Stones
-- This project is a real estate website built using a combination of HTML, CSS, and JavaScript.
+# Pheliz-Investment
+- This project is an e-commerce website built using a combination of HTML, CSS, and JavaScript.
 ## Description
-* Focus: showcase properties for sale or rent.
+* Focus: showcase our online srvices and stationaries.
 ### Technologies:
   * HTML: Provides the core structure and content of the website
   * CSS: Styles the website's appearance, ensuring user-friendly and virtually appealing experience
   * JavaScript: Adds interactive and potential functionalities like search filters, property or contact forms.
 ## Potential Features
-* `Property Listing`: Detailed pages for each property with description, high-quality photos, and key features.
-* `Search Functionality`: Filters narrow down property searches based on locations, price range, property type.
-* `Contact Forms`: Allowa potential buyers to renters to easily contact the realtor/property owner
+* `E-commerce`: Detailed pages for each services with description, high-quality photos, and key features.
+* `Service Functionality`: Filters narrow down services based on locations, price range, service type.
+* `Contact Forms`: Allow potential buyers or xustomers to easily contact the the team.
 * `Responsive Design`: Ensure the website displays and functionality optimally on various devises
 ## Getting Started
 1. Clone or download the project files
