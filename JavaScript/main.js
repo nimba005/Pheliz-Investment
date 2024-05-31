@@ -46,4 +46,25 @@ const closeNav = () => {
   menuBtn.style.display = 'inline-block';
 }
 
+document.getElementById('loginForm').addEventListener('submit', async function(event) {
+  event.preventDefault();
+
+  const email = document.getElementById('loginEmail').value;
+  const password = document.getElementById('loginPassword').value;
+
+  const response = await fetch('/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ email, password })
+  });
+
+  if (response.ok) {
+    console.log('Login successful');
+  } else {
+    console.error('Login failed')
+  }
+});
+
 closeBtn.addEventListener('click', closeNav);
