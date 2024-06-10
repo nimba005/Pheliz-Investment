@@ -5,18 +5,26 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/',  // Ensure the publicPath is set
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exlude: /node_modules/,
+        test: /\.js$/,
+        exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react', '@babel/preset-env']
+          }
         }
-      }
-    ]
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+    ],
   },
   resolve: {
     extensions: ['.js', '.jsx']
@@ -25,11 +33,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: './index.html'
-    })
+    }),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    static: {
+      directory: path.join(__dirname, 'public'), // Change this to your public directory if CSS is there
+    },
     compress: true,
-    port: 9000
+    port: 9000,
+    historyApiFallback: true  // Add this line to support HTML5 History API based routing
   }
 };
