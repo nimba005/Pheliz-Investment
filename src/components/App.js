@@ -5,16 +5,23 @@ import Footer from "./Footer.js";
 import Home from "./Home.js";
 import Shop from "./Shop.js";
 import Services from "./Services.js";
+import About from "./About.js";
+import Login from "./Login.js";
+import Signup from "./Signup.js";
+import Search from "./Search.js";
 
 function App() {
   return (
     <Router>
+      <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/shop" element={<Shop />} />
-        {/* Add a route for the Home component */}
-        <Route path="/" exact element={() => <h1>Welcome to Pheliz Investment!</h1>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
       <Footer />
     </Router>
