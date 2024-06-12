@@ -24,6 +24,19 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images',
+              publicPath: 'images',
+            }
+          }
+        ]
+      }
     ],
   },
   resolve: {
@@ -37,7 +50,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public'), // Change this to your public directory if CSS is there
+      directory: path.join(__dirname, 'src'), // Change this to your public directory if CSS is there
     },
     compress: true,
     port: 9000,

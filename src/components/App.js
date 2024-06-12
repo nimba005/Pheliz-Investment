@@ -9,6 +9,7 @@ import About from "./About.js";
 import Login from "./Login.js";
 import Signup from "./Signup.js";
 import Search from "./Search.js";
+import Contact from "./Contact.js";
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/search" element={<Search />} />
       </Routes>
       <Footer />
     </Router>
