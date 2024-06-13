@@ -40,7 +40,13 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    fallback: {
+      "path": require.resolve("path-browserify"),
+      "crypto": require.resolve("crypto-browserify"),
+      "stream": require.resolve("stream-browserify"),
+      "vm": require.resolve("vm-browserify")
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -50,7 +56,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'src'), // Change this to your public directory if CSS is there
+      directory: path.join(__dirname, 'public'), // Change this to your public directory if CSS is there
     },
     compress: true,
     port: 9000,
