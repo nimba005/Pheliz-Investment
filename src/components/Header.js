@@ -7,8 +7,7 @@ function Header() {
       <h1>Pheliz Investment</h1>
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/shop">Shop</Link>
+        <Link to="/services">Services</Link>  
         <Link to="/about">About</Link>
         <Link to="/search">Search</Link>
         <Link to="/contact">Contact</Link>
