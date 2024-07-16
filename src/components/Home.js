@@ -1,10 +1,14 @@
 import React from "react";
+import About from "./About";
+import Services from "./Services";
+import Contact from "./Contact";
 
-function Home() {
+const Home = () => {
   return (
-    <div className="container">
-      <h2>Welcome to Pheliz Investment!</h2>
-      <p>Your one-stop shop for all your stationery needs and online services.</p>
+    <div>
+      <About />
+      <Services />
+      <Contact />
     </div>
   );
 }
